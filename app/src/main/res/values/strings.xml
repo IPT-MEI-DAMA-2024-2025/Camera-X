@@ -2,4 +2,7 @@
     <string name="app_name">Camera X</string>
     <string name="label_button">Tirar Foto</string>
     <string name="permission_request_denied">Permissão de acesso à câmara negada</string>
+    <string name="use_case_binding_failed">Não foi possível inicializar a câmara</string>
+    <string name="photo_capture_failed">Não foi possível obter a fotografia: %1$s</string>
+    <string name="photo_capture_succeeded">Fotografia guardada em: %1$s</string>
 </resources>

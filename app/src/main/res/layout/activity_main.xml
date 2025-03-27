@@ -7,13 +7,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <!-- Este 'PreviewView' vai apresentar a imagem
+         que a câmara vai ver... -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/image_capture_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="2dp"
+        android:text="@string/label_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/guide_line"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!-- este objeto é uma 'guia' para ajudar no arranjo gráfico dos
+         elementos da interface -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
